@@ -7,7 +7,7 @@ setInterval(marioJump, 100);
 
 function marioJump() {
     let distancePipe = pipe.offsetLeft;
-    if(distancePipe < 290){
+    if(distancePipe < 182){
         mario.classList.add('jump')
 
         setTimeout(()=>{
@@ -15,3 +15,12 @@ function marioJump() {
         }, 700)
     }
 }
+
+
+//animação
+document.addEventListener('DOMContentLoaded', ()=>{
+    new TypeIt('.dig', {
+        speed: 200,
+    }).type('', {delay: 900})
+    .go()
+})
